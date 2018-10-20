@@ -6,11 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DatingAppV2.API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class AuthController: ControllerBase
     {
-        private readonly IAuthRepository _repos;
         private readonly IAuthRepository _repo;
         public AuthController(IAuthRepository repo)
         {
